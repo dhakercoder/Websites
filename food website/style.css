@@ -11,4 +11,5 @@
 /* navigation bar */
 #navbar{
     display: flex;
+    background-color: aquamarine;
 }
