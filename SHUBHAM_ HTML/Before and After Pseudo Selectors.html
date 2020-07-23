@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selectors</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Rowdies:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            color: white;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header::before{
+            content: "  ";
+            background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity:2;
+        }
+
+        section {
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            margin: 3px 23px;
+            align-items: center;
+            /* border: 2px solid red; */
+            justify-content: center;
+            font-family: 'Rowdies', cursive;
+        }
+
+
+        section::before{
+            content: this is content;
+         font-family: 'Rowdies', cursive;
+        }
+
+        .navigation {
+            font-size: 23px;
+            display: flex;
+            font-family: 'Rowdies', cursive;
+        }
+
+        li {
+            list-style: none;
+            padding: 52px 27px;
+            margin-left: 159px;
+            font-family: 'Rowdies', cursive;
+        }
+        h3{
+            font-size: 34px;
+            color: rgb(253, 253, 253);
+        }
+        span{
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Contect</li>
+                <li class="item">Start learning</li>
+            </ul>
+        </nav>
+
+    </header>
+    <section>
+        <h3>WELCOME TO CODING WORLD </h3>
+       <span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, doloribus inventore. Similique libero rerum
+        voluptates adipisci. Assumenda, excepturi dolores odio suscipit quibusdam accusamus.
+    </span>
+    </section>
+</body>
+
+</html>

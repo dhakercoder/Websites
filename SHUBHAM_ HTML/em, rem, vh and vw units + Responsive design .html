@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>em, rem, vh and vw units + Responsive design </title>
+    <style>
+
+        html{
+            font-size: 25px; 
+        }
+
+        .container{ 
+            width: 400px;
+            /* height: 344px; */
+            /* vh unit takes all height which we can see */
+            height:100vh;
+
+            /* vh unit takes all width which we can see */
+            width: 100vw;
+
+
+            border: 2px solid red;
+            font-size: 10px;
+        }
+        h1{
+            text-align: center ;
+        }
+
+        #first{
+            /* font-size: x em; em unit increase font-size y*x  */
+                /* font-size: 3em; */
+
+            /* padding:x em ; em unit increase padding  font-size *padding */
+                 /* padding: 3em; */
+        }
+        
+        #second{
+            /* font-size: 3rem;
+            padding: 3rem; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">THIS IS FIRST HEADING</h1>
+        <h1 id="second">THIS IS SECOND HEADING</h1>
+        <h1 id="third">THIS IS THIRD HEADING</h1>
+    </div>
+</body>
+</html>

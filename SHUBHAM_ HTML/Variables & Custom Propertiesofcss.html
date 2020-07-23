@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables & Custom Properties in css</title>
+    <style>
+        :root{
+
+            --box-color :#e0e0e0;
+            --bg-color :red;
+        }
+        .container{
+            display: flex;
+            align-items:center ;
+            justify-content: center;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: var(--bg-color ) ;
+            box-shadow: 10px 10px var(--box-color );
+            border: 2px solid black;
+            margin: 2px 9px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box 1</div>
+        <div class="box">box 2 </div>
+        <div class="box">box 3</div>
+    </div>
+</body>
+</html>

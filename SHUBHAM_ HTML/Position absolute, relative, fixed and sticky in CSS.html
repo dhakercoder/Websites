@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position absolute, relative, fixed and sticky in CSS</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: khaki;
+            height: 1344px;
+        }
+        /* Position absolute, relative, fixed and sticky  */
+        .box {
+            display: inline-block;
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+
+        #box3 {
+             /* relative:relative to its normal position 
+             position: relative; */
+             /* we can use top bottom right left hear
+            
+           absolute leave space from its parent 
+           position:absolute; 
+
+           fixed: position relitive to the brower window 
+
+           
+           position: fixed;
+           right:4px;  
+          */
+          position: sticky;
+          top:3px;
+            /* top: 34px;
+           left: 34px; */
+       
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">chat with us</div>
+    <div class="box" id="box4">4</div>
+</div>     
+</body>
+
+</html>

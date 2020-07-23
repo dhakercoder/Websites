@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors </title>
+  
+</head>
+<style>
+/* 
+    div > p{
+        color: black;
+        background-color:green;
+        font-weight: bold;
+    } */
+
+    div + p{
+        color: black;
+        background-color:green;
+        font-weight: bold;
+    }
+        
+</style>
+<body>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li><p>this is a paragraph</p></li>
+            </ul>
+            <p>this is para</p>
+        </div>
+       <p> this is para 22 </p>
+    </div>
+    <p>this is para 44</p>
+</body>
+</html>

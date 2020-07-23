@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Creating Animations & Keyframes</title>
+</head>
+<style>
+
+    @keyframes shubham1 {
+        from {
+            width: 200px;
+        }
+
+        to {
+            width: 500px;
+        }
+    }
+
+    @keyframes shubham2 {
+        0% {
+            top: 0px;
+            left: 0px;
+        }
+
+        25% {
+            top: 250px;
+            left: 0px;
+        }
+
+        75% {
+            top: 250px;
+            left: 250px;
+        }
+
+        100% {
+            top: 0px;
+            left: 250px;
+        }
+    }
+
+    .container {
+        background-color: #ffe1e1;
+    }
+
+    .box {
+        height: 250px;
+        width: 250px;
+        color: white;
+        /* font-size: 23px; */
+        /* text-align: center; */
+        background-color: rgb(0, 0, 0);
+        /*   */
+        /*  */
+        position: relative;
+        /* animation-name: shubham 1; */
+        animation-name: shubham2;
+        animation-duration: 8s;
+        animation-iteration-count: 1;
+        /* animation-fill-mode: alternate; */
+        /* animation-timing-function: ease-in-out; */
+        /* animation-delay: 2s; */
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is box
+        </div>
+    </div>
+</body>
+
+</html>

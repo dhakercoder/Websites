@@ -1,0 +1,14 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* css variables */
+:root{
+    --navbar-height:59px;
+}
+
+/* navigation bar */
+#navbar{
+    display: flex;
+}

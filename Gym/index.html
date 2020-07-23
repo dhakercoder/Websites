@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham's gym</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&display=swap" rel="stylesheet">
+<style>
+    /* css reset */
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('img/people-2604149_1920.jpg');
+        color: white;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: auto;
+        top: 20px;
+        background-color: #1f1f1f;
+    }
+
+    .left img {
+        width: 100px;
+        /* filter:invert is used for changing color */
+        filter: invert(100%);
+        padding: 0px 0px;
+        padding-top: 13px;
+        padding-left: 35px;
+    }
+
+    .left div {
+        text-align: center;
+        background-color: black;
+        color: white;
+        /* position: sticky;
+        top:3px; */
+    }
+
+    .mid {
+        display: block;
+        width: 65%;
+        margin: 20px auto;
+        /* border: 2px solid green; */
+
+    }
+
+    .right {
+        position: absolute;
+        right: 11px;
+        top: 17px;
+        /* right: 34px; */
+        /* top: 22px; */
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+        /* position:sticky; */
+    }
+
+    .navbar li a:hover{
+         color:red;
+     } 
+    .navbar li a.active {
+        text-decoration: underline;
+        color:red;
+    }
+
+    .btn {
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 8px;
+        font-size: 18px;
+        cursor: pointer;
+        font-family: 'Baloo Bhai 2', cursive;
+        margin-top: 15px;
+
+    }
+
+    .btn:hover {
+        background-color: rgb(63, 59, 59);
+    }
+
+
+    .left div {
+        padding-left: 11px;
+        padding-right: 11px;
+        margin-top: -8px;
+    }
+
+    .container {
+        border: 8px solid #ffc150;
+        margin: 106p 80px;
+        padding: 75px;
+        border-radius: 28px;
+        width: 33%;
+        position: absolute;
+        top: 177px;
+        left: 32px;
+        background-color: #4c0404;
+        /* height: 12356px; */
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhai 2', cursive;
+        text-align: center;
+        display: block;
+        width: 411px;
+        padding: 7px;
+        border: 5px solid red;
+        border-radius: 47px;
+        margin: 15px auto;
+        font-size: 21px;
+
+    }
+
+    .container h1 {
+        color: #85e8ff;
+        position: absolute;
+        right: 155px;
+        top: -3px;
+    }
+
+    .bttn {
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 8px;
+        font-size: 22px;
+        cursor: pointer;
+        font-family: 'Baloo Bhai 2', cursive;
+        margin-top: 15px;
+        position: absolute;
+        bottom: 27px;
+        right: 37px;
+    }
+    .bttn:hover{
+        background-color: rgb(41, 35, 35);
+    }
+
+    .bttnn {
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 8px;
+        font-size: 22px;
+        cursor: pointer;
+        font-family: 'Baloo Bhai 2', cursive;
+        margin-top: 15px;
+        position: absolute;
+        bottom: 24px;
+        left: 30px;
+    }
+    .bttnn:hover{
+        background-color: rgb(41, 35, 35);
+    }
+</style>
+
+<body>
+    <header class="header">
+
+        <!-- left box is for logo -->
+        <div class="left">
+            <img src="img/gym.png" alt="">
+            <div>shubham's Fitness gym</div>
+        </div>
+
+        <!-- mid box is for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="https://google.com" target="_blank">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- right box is for buttons -->
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email now</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>JOIN OUR GYM NOW</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="ENTER YOUR FIRST NAME">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="ENTER YOUR LAST NAME">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="ENTER YOUR AGE">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="ENTER YOUR GENDER">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="PHONE NO.">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="EMAIL ID">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="ADDRESS HEARE">
+            </div>
+
+
+
+
+            <button class="bttn">SUBMIT</button>
+            <input class="bttnn" type="reset" value="Reset">
+
+        </form>
+    </div>
+
+</body>
+
+</html>
