@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval & setTimeOut</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        Current Date and time is : <span id="time"></span>
+    </div>
+
+
+
+    <script>
+
+        // setTimeout --> Alllows us to run the function once after the interval of time
+        // clearTimeout --> Alllows us to run the function repeatedly after the interval of time
+
+        function greet(name) {
+            console.log("hello good morning " + name);
+        }
+        // settimeout(greet,2000,"shubham");
+        //    timeout = setTimeout( greet , 2000 ,"shubham");
+        //    clearTimeout(timeout);
+
+
+        // setInterval( greet,2000,"shubham");
+
+
+
+        function DisplayTime() {
+            let today = new Date();
+            // let date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+            // let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+            // let dateTime = date + ' ' + time
+            // console.log(dateTime);
+
+            document.getElementById('time').innerHTML = today.toLocaleString();
+
+        }
+
+        setInterval(DisplayTime, 1000);
+
+    </script>
+</body>
+
+</html>

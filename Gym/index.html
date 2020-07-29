@@ -13,7 +13,7 @@
     body {
         margin: 0px;
         padding: 0px;
-        background: url('img/people-2604149_1920.jpg');
+        background: url('/home/mamta/Desktop/Project/Gym/weightlifting-2427461_1920.jpg');
         color: white;
         font-family: 'Baloo Bhai 2', cursive;
     }
@@ -24,7 +24,7 @@
         position: absolute;
         left: auto;
         top: 20px;
-        background-color: #1f1f1f;
+        background-color: #050910;
     }
 
     .left img {
@@ -38,7 +38,7 @@
 
     .left div {
         text-align: center;
-        background-color: black;
+        background-color: #050910;
         color: white;
         /* position: sticky;
         top:3px; */
@@ -78,20 +78,23 @@
         /* position:sticky; */
     }
 
-    .navbar li a:hover{
-         color:red;
-     } 
+    .navbar li a:hover {
+        color: #00ff08;
+        font-size: 25px;
+    }
+
     .navbar li a.active {
+
         text-decoration: underline;
-        color:red;
+        color: #00ff08;
     }
 
     .btn {
         margin: 0px 9px;
-        background-color: black;
+        background-color: #030b18;
         color: white;
         padding: 4px 14px;
-        border: 2px solid gray;
+        border: 4px solid #00ff08;
         border-radius: 8px;
         font-size: 18px;
         cursor: pointer;
@@ -111,8 +114,8 @@
         margin-top: -8px;
     }
 
-    .container {
-        border: 8px solid #ffc150;
+    #container {
+        border: 8px solid #3300ff;
         margin: 106p 80px;
         padding: 75px;
         border-radius: 28px;
@@ -120,8 +123,12 @@
         position: absolute;
         top: 177px;
         left: 32px;
-        background-color: #4c0404;
+        background-color: #151521;
         /* height: 12356px; */
+
+
+        visibility: hidden;
+
     }
 
     .form-group input {
@@ -130,14 +137,15 @@
         display: block;
         width: 411px;
         padding: 7px;
-        border: 5px solid red;
+        border: 5px solid #3300ff;
         border-radius: 47px;
         margin: 15px auto;
         font-size: 21px;
 
     }
 
-    .container h1 {
+
+    #container h1 {
         color: #85e8ff;
         position: absolute;
         right: 155px;
@@ -146,10 +154,10 @@
 
     .bttn {
         margin: 0px 9px;
-        background-color: black;
+        background-color: #060e1b;
         color: white;
         padding: 4px 14px;
-        border: 2px solid gray;
+        border: 4px solid #3300fd;
         border-radius: 8px;
         font-size: 22px;
         cursor: pointer;
@@ -159,16 +167,17 @@
         bottom: 27px;
         right: 37px;
     }
-    .bttn:hover{
+
+    .bttn:hover {
         background-color: rgb(41, 35, 35);
     }
 
     .bttnn {
         margin: 0px 9px;
-        background-color: black;
+        background-color: #060e1b;
         color: white;
         padding: 4px 14px;
-        border: 2px solid gray;
+        border: 4px solid #3300fd;
         border-radius: 8px;
         font-size: 22px;
         cursor: pointer;
@@ -178,12 +187,77 @@
         bottom: 24px;
         left: 30px;
     }
-    .bttnn:hover{
+
+    .bttnn:hover {
         background-color: rgb(41, 35, 35);
+    }
+
+    #btnn {
+        margin: 0px 9px;
+        background-color: #1f1f1f;
+        color: white;
+        padding: 4px 150px;
+        border: 4px solid #00b9ff;
+        border-radius: 19px;
+        font-size: 22px;
+        cursor: pointer;
+        font-family: 'Baloo Bhai 2', cursive;
+        margin-top: 15px;
+        position: absolute;
+        bottom: 212px;
+        /* left: 30px; */
+        left: 411px;
+
+    }
+
+
+
+    #h1 {
+
+        position: absolute;
+        top: 230px;
+        left: 322px;
+        font-size: 45px;
+        font-weight: bold;
+        color: white;
+    }
+
+    #div {
+        /* border: 4px solid cyan; */
+        border-radius: 13px;
+        margin: 26px;
+        padding: 7px;
+        position: absolute;
+        top: 75px;
+        right: 30px;
+        font-size: 19px;
+    }
+
+    #time {
+        font-weight: bold;
+    }
+
+    #ter {
+        font-size: 22px;
+        background-color: #101a33;
+        position: absolute;
+        left: 0px;
+        padding: 3px 0px;
+        bottom: -350px;
+        height: 30px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 </style>
 
 <body>
+    <h1 id="h1">WELCOME TO SHUBHAM'S GYM</h1>
+
+    <div id="div"><span id="time"></span></div>
+
+
     <header class="header">
 
         <!-- left box is for logo -->
@@ -208,7 +282,7 @@
             <button class="btn">Email now</button>
         </div>
     </header>
-    <div class="container">
+    <div id="container">
         <h1>JOIN OUR GYM NOW</h1>
         <form action="noaction.php">
             <div class="form-group">
@@ -236,6 +310,14 @@
             </div>
 
             <div class="form-group">
+                <input type="text" name="" placeholder="DATE OF JOINING">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="TIME OF JOINING">
+            </div>
+
+            <div class="form-group">
                 <input type="text" name="" placeholder="ADDRESS HEARE">
             </div>
 
@@ -247,6 +329,73 @@
 
         </form>
     </div>
+
+    <button id="btnn" onclick="hide()">JOIN NOW</button>
+
+    <script>
+
+        function hide() {
+            let btn = document.getElementById('btnn');
+            let para = document.getElementById('container');
+
+
+            para.style.visibility = 'visible';
+            btn.style.visibility = 'hidden';
+            h1.style.visibility = 'hidden';
+
+
+
+
+        }
+
+
+
+        function DisplayTime() {
+            let today = new Date();
+            // let date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+            // let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+            // let dateTime = date + ' ' + time
+            // console.log(dateTime);
+
+            document.getElementById('time').innerHTML = today.toLocaleString();
+
+        }
+
+        setInterval(DisplayTime, 1000);
+
+
+
+
+
+        // ALERT
+        // alert("WELCOME TO THE SITE")
+
+        // prompt
+        // let name = prompt("what is your name", "guest");
+
+        // let join = confirm("do you want to delete this post? ")
+
+        setTimeout(() => {
+            let login = confirm("do you want to login")
+            console.log()
+        }, 5000);
+
+//  if (join) {
+//      console.log("your post is deleted successfully ")
+//  }
+
+//  else {
+//      console.log("your post is not deleted ")
+//  }
+    </script>
+
+
+
+
+    <footer id="ter">
+        Date of birth of this website july.23.2020 Copyright &copy;www.Shubham's gym.com. All rights reserved!
+    </footer>
+
 
 </body>
 

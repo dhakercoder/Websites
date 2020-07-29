@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Listening to Events </title>
+</head>
+
+<body>
+
+    <!-- Browser Event :
+
+        mousedown\mouseup
+        mouseover\mouseout
+        mousemove
+    
+        click
+    
+        submit
+        focus
+        contextmenu
+    
+        DOMContentLoded
+    
+        trensitionend
+     -->
+
+    <div class="continer">
+        <h1 >This is heading</h1>
+
+        <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur facilis eius minima odit sapiente quasi
+            beatae laboriosam iste vel, doloribus aspernatur eum laudantium? Debitis deserunt rem fugit sequi velit quo
+            mollitia, sapiente adipisci saepe, minima illum ut error impedit ad asperiores alias inventore quibusdam.
+            Temporibus ducimus delectus cum illum deleniti maiores quidem praesentium minus tenetur! Nobis, repellendus
+            reiciendis? Reprehenderit, cumque aspernatur. Architecto ullam, voluptates quos ipsa atque adipisci enim
+            excepturi dicta officia numquam fugit error nostrum dignissimos aperiam impedit dolorem cumque explicabo
+            debitis sapiente temporibus sed commodi alias repudiandae autem. Vitae commodi cupiditate neque dolore,
+            accusantium possimus earum nulla odit consequatur quidem harum veniam velit rerum facilis a vel, quod
+            laboriosam? Adipisci et repellat id, mollitia in maiores necessitatibus cum dicta atque sed libero dolor
+            aspernatur consequuntur quibusdam officia, nesciunt repudiandae voluptatibus. Consequatur incidunt
+            laudantium culpa blanditiis in molestias, dignissimos asperiores deserunt id quos pariatur nulla? Vero
+            inventore voluptas veritatis impedit dolores voluptatibus ea, ipsum incidunt rem animi ducimus iusto iure
+            neque quod quos, corrupti quibusdam tempora ipsam facere. Eius in aut numquam, magnam tenetur vel mollitia
+            odio temporibus consequatur laborum facere magni, labore distinctio molestiae? Unde repellat quas nihil
+            reprehenderit modi, quisquam maiores placeat cumque quam cum, praesentium magnam, a eveniet tenetur quia!
+            Sit adipisci ex, vero mollitia quam sunt laboriosam incidunt veniam laborum excepturi reiciendis sequi,
+            ullam sint labore nesciunt unde dolorum aperiam reprehenderit officia. Dolor, aspernatur animi beatae
+            dolorum, incidunt corrupti blanditiis exercitationem minus inventore labore delectus quam? At quam saepe non
+            dolore iusto quis eveniet sit! Ipsum magnam ratione ullam expedita dolorum, nam error? Quae voluptatem
+            repellendus quaerat delectus ducimus consequatur esse, perferendis velit mollitia nostrum. Similique ab
+            doloribus hic tenetur ut. Quasi aspernatur architecto deleniti beatae possimus necessitatibus voluptates
+            tempora saepe! Aspernatur accusamus temporibus est cupiditate quos, error id molestias, deleniti tempore
+            dolorum nostrum reiciendis vitae! Asperiores nesciunt exercitationem corporis soluta sapiente, iusto dolores
+            itaque id minima reiciendis consectetur ratione veniam quo eveniet officiis pariatur! Repudiandae ipsa
+            dolores facere. Nesciunt repellendus aperiam quos maxime quaerat pariatur necessitatibus blanditiis libero
+            delectus? Voluptates iure, ad cupiditate autem soluta nesciunt quos voluptate dolore eligendi recusandae?
+            Molestiae cum, animi ratione consequatur quasi distinctio sed quos, in magni id eveniet ipsa, nobis quas non
+            saepe fugit. Vel laudantium nisi quasi ipsum unde quidem iste, magni sed nam ullam officiis eum similique
+            sunt suscipit dolore earum, labore nobis maiores rerum exercitationem culpa tenetur dolorem porro
+            blanditiis? Veniam vero consequuntur quo laboriosam.</p>
+    </div>
+
+<button id="btn" onclick="hide()" >HIDE\SHOW</button>
+
+    <script>
+
+function hide(){
+    let btn = document.getElementById('btn');
+    let para = document.getElementById('para');
+
+    if (para.style.display != 'none') {
+    para.style.display ='none';
+        
+    }
+
+    else{
+    para.style.display ='block';
+    }
+}
+
+
+
+
+    </script>
+</body>
+
+</html>
