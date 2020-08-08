@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Yeon Sung', cursive;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: url('/home/mamta/Desktop/Project/animated website/img/background.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+
+.navbar{
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button{
+    color: #fbfcfd;
+    padding: 10px 25px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+.content{
+    color:#fbfcfd;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-50%);
+    z-index: 2;
+}
+
+small{
+    font-size: 25px;
+}
+
+h1{
+    font-size: 45px;
+    margin: 10px 0 30px;
+    line-height: 50px;
+}
+
+.side-bar{
+    width: 50px;
+    height: 100vh;
+    background: linear-gradient(#00545d,#000729);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.menu{
+
+    display: block;
+    width: 55%;
+    margin: 40px auto 0;
+    cursor: pointer;
+}
+
+.social-links img, .useful-links img{
+    width: 30px;
+    margin: 5px auto;
+    cursor: pointer;
+}
+
+.social-links{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    width: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+
+}
+
+.useful-links{
+    position: absolute;
+    left: 15px;
+    bottom: 30px;
+    width: 50%;
+    text-align: center;
+}
+
+.bubbles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+}
+
+.bubbles img{
+    width: 50px;
+    animation: bubbles 5s linear infinite;
+}
+
+@keyframes bubbles{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+   70%{
+        opacity: 1;
+    }
+
+   100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+
+}
+  
+.bubbles img:nth-child(1){
+    animation-delay: 2s;
+    width: 45px;
+}
+
+.bubbles img:nth-child(2){
+    animation-delay: 1s;
+    width: 45px;
+}
+
+.bubbles img:nth-child(3){
+    animation-delay: 3s;
+    width: 45px;
+
+}
+
+.bubbles img:nth-child(4){
+    animation-delay: 4.5s;
+    width: 35px;
+}
+
+.bubbles img:nth-child(5){
+    animation-delay: 3.5s;
+    width: 45px;
+
+
+}
+
+.bubbles img:nth-child(6){
+    animation-delay: 6s;
+    width: 45px;
+
+}
+
+.bubbles img:nth-child(7){
+    animation-delay: 8.5s;
+    width: 45px;
+
+}
+
+.bubbles img:nth-child(8){
+    animation-delay: 7s;
+    width: 25px;
+}
+
