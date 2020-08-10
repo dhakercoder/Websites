@@ -1,0 +1,15 @@
+{
+  "name": "making_a_express_app",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "slugify": "^1.4.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

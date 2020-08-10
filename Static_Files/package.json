@@ -1,0 +1,16 @@
+{
+  "name": "shubham",
+  "version": "1.0.0",
+  "description": "shubham",
+  "main": "app.js",
+  "dependencies": {
+    "express": "~4.17.1"
+    
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "e"
+  },
+  "author": "",
+  "license": "ISC"
+}
