@@ -110,17 +110,6 @@
         </div>
     </div>
 
-    <!-- <div class="bubbles">
-        <img src="/home/mamta/Desktop/Project/Gym/img/download (2).jpeg" >
-        <img src="/home/mamta/Desktop/Project/Gym/img/download (1).jpeg" >
-        <img src="/home/mamta/Desktop/Project/Gym/img/download (1).jpeg" >
-        <img src="/home/mamta/Desktop/Project/Gym/img/download (1).jpeg" >
-        <img src="/home/mamta/Desktop/Project/Gym/img/download (1).jpeg" >
-        <img src="/home/mamta/Desktop/Project/Gym/img/download (1).jpeg" >
-        <img src="/home/mamta/Desktop/Project/Gym/img/download (1).jpeg" >
-        <img src="/home/mamta/Desktop/Project/Gym/img/download (1).jpeg" >
-       
-    </div> -->
 
     </div>
 
@@ -130,6 +119,7 @@
 
 
     <span><button id="btnn" onclick="hide()">JOIN NOW</button></span>
+
     <script>
 
         function hide() {
@@ -150,12 +140,13 @@
 
         function DisplayTime() {
             let today = new Date();
+            document.getElementById('time').innerHTML = today.toLocaleString();
+
             // let date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
             // let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
             // let dateTime = date + ' ' + time
             // console.log(dateTime);
 
-            document.getElementById('time').innerHTML = today.toLocaleString();
 
         }
 
@@ -175,7 +166,7 @@
 
         setTimeout(() => {
             let login = confirm("DO YOU WANT TO LOGIN ")
-            console.log()
+            console.log(login)
         }, 5000);
 
 //  if (join) {

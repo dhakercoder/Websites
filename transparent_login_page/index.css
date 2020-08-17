@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+
+.container{
+    width: 30%;
+    position: absolute;
+    top: 21%;
+    left: 15%;
+}
+
+.container h1{
+    color:#d96264;
+    display: i;
+    font-size:35px;
+    border-bottom:4px solid #b33552;
+    margin-bottom: 43px;
+    padding: 0px 12px;
+}
+
+.box{
+    border-bottom:3px solid  #b33552;
+    width: 100%;
+    margin: 22px 0px;
+}
+
+.box input {
+    font-family: 'ZCOOL XiaoWei', serif;
+    background: none;
+    width: 75%;
+    border: none;
+    outline: none;
+    color: #b33552;
+    margin: 15px 0px;
+    padding: 3px 10px;
+    font-size: 20px;
+}
+
+.box i{
+    color: #d96264;
+    width: 40px;
+    text-align: center;
+}
+
+.btn{
+    font-family: 'ZCOOL XiaoWei', serif;
+    color: wheat;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #b33552;
+    font-size: 20px;
+    font-weight: bold;
+    width: 40%;
+    margin: 12px 0;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    font-weight: bold;
+    color: #000000;
+    border: 3px solid #b33552;
+
+}
